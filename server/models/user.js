@@ -71,7 +71,6 @@ UserSchema.statics.findByToken = function (token) {
 
 UserSchema.pre('save', function (next) {
   let user = this;
-  console.log('called');
   // if we ask to modify the password, hash it
   // else if no modify is asking, dont hash something
   // that is already hashed
